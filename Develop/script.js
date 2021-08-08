@@ -5,6 +5,10 @@ $("#currentDay").text(currentDay)
 var input1Con = document.querySelector('#input1area')
 
 nineAm();
+tenAm();
+elevenAm();
+twelvePm();
+thirteenAm();
 
 
 
@@ -50,6 +54,68 @@ function tenAm () {
     }
 
 }
+function elevenAm () {
+    var input11area = document.querySelector('#input11area');
+    var output11area = document.querySelector('#input11area');
+    var input11Btn = document.querySelector('#button11');
 
+    input11Btn.addEventListener('click', storeInfo11);
+
+    
+    
+    input11area.value = localStorage.getItem("UserInput11");
+    output11area.textContent = localstorage.getItem("UserInput11");
+    
+
+    function storeInfo11() {
+        localStorage.setItem("UserInput9", input11area.value);
+        output11area.textContent = input11area.value
+        
+
+    }
+
+}
+function twelvePm () {
+    var input12area = document.querySelector('#input12area');
+    var output12area = document.querySelector('#input12area');
+    var input12Btn = document.querySelector('#button12');
+
+    input12Btn.addEventListener('click', storeInfo12);
+
+    
+    
+    input12area.value = localStorage.getItem("UserInput12");
+    output12area.textContent = localstorage.getItem("UserInput12");
+    
+
+    function storeInfo12() {
+        localStorage.setItem("UserInput12", input12area.value);
+        output12area.textContent = input12area.value
+        
+
+    }
+
+}
+function thirteenAm () {
+    var input1area = document.querySelector('#input1area');
+    var output1area = document.querySelector('#input1area');
+    var input1Btn = document.querySelector('#button1');
+
+    input9Btn.addEventListener('click', storeInfo9);
+
+    
+    
+    input9area.value = localStorage.getItem("UserInput9");
+    output9area.textContent = localstorage.getItem("UserInput9");
+    
+
+    function storeInfo9() {
+        localStorage.setItem("UserInput9", input9area.value);
+        output9area.textContent = input9area.value
+        
+
+    }
+
+}
 
 
