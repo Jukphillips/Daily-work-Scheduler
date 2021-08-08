@@ -27,14 +27,15 @@ function nineAm () {
     
     
     input9area.value = localStorage.getItem("UserInput9");
-    output9area.textContent = localstorage.getItem("UserInput9");
+    output9area.textContent = localStorage.getItem("UserInput9");
     
 
     function storeInfo9() {
         localStorage.setItem("UserInput9", input9area.value);
         output9area.textContent = input9area.value
         
-        
+        clear.style.display = "block";
+        clearstorage()
 
     }
 
@@ -49,7 +50,7 @@ function tenAm () {
     
     
     input10area.value = localStorage.getItem("UserInput10");
-    output10area.textContent = localstorage.getItem("UserInput10");
+    output10area.textContent = localStorage.getItem("UserInput10");
     
 
     function storeInfo10() {
@@ -70,7 +71,7 @@ function elevenAm () {
     
     
     input11area.value = localStorage.getItem("UserInput11");
-    output11area.textContent = localstorage.getItem("UserInput11");
+    output11area.textContent = localStorage.getItem("UserInput11");
     
 
     function storeInfo11() {
@@ -91,7 +92,7 @@ function twelvePm () {
     
     
     input12area.value = localStorage.getItem("UserInput12");
-    output12area.textContent = localstorage.getItem("UserInput12");
+    output12area.textContent = localStorage.getItem("UserInput12");
     
 
     function storeInfo12() {
@@ -112,7 +113,7 @@ function thirteenPm () {
     
     
     input1area.value = localStorage.getItem("UserInput1");
-    output1area.textContent = localstorage.getItem("UserInput1");
+    output1area.textContent = localStorage.getItem("UserInput1");
     
 
     function storeInfo1() {
@@ -134,7 +135,7 @@ function fourteenPm () {
     
     
     input2area.value = localStorage.getItem("UserInput2");
-    output2area.textContent = localstorage.getItem("UserInput2");
+    output2area.textContent = localStorage.getItem("UserInput2");
     
 
     function storeInfo2() {
@@ -155,7 +156,7 @@ function fifteenPm () {
     
     
     input3area.value = localStorage.getItem("UserInput3");
-    output3area.textContent = localstorage.getItem("UserInput3");
+    output3area.textContent = localStorage.getItem("UserInput3");
     
 
     function storeInfo3() {
@@ -176,7 +177,7 @@ function sixteenPm () {
     
     
     input4area.value = localStorage.getItem("UserInput4");
-    output4area.textContent = localstorage.getItem("UserInput4");
+    output4area.textContent = localStorage.getItem("UserInput4");
     
 
     function storeInfo4() {
@@ -197,7 +198,7 @@ function seventeenPm () {
     
     
     input5area.value = localStorage.getItem("UserInput5");
-    output5area.textContent = localstorage.getItem("UserInput5");
+    output5area.textContent = localStorage.getItem("UserInput5");
     
 
     function storeInfo5() {
@@ -211,4 +212,13 @@ function seventeenPm () {
 
 
 
+function clearstorage(){
+    clear.addEventListener('click', function(){
+        localStorage.clear();
+        clear.style.display = "none";
+        location.reload();
 
+
+    })
+   
+}
