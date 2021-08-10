@@ -5,6 +5,7 @@ $("#currentDay").text(currentDay)
 var input1Con = document.querySelector('#input1area')
 var clear = document.querySelector('#clear')
 
+setBackgroundColor();
 nineAm();
 tenAm();
 elevenAm();
@@ -14,6 +15,85 @@ fourteenPm();
 fifteenPm();
 sixteenPm();
 seventeenPm();
+
+
+function setBackgroundColor() {
+    var time = moment().hour()
+    
+    if (time > 9) { console.log("true")
+        $('#input9area').addClass('past');
+        }
+    else if (time == 9) {
+       $('#input9area').addClass('present');
+    } else if (time < 9) {
+      $('#input9area').addClass('future');
+        }
+
+    if (time > 10) {
+        $('#input10area').addClass('past');
+    } else if(time == 10) {
+        $('#input10area').addClass('present');
+    } else if (time < 10) {
+        $('#input10area').addClass('future');
+    }
+
+    if (time > 11) {
+        $('#input11area').addClass('past');
+    } else if(time == 11) {
+        $('#input11area').addClass('present');
+    } else if (time < 11) {
+        $('#input11area').addClass('future');
+    }
+    if (time > 12) {
+        $('#input12area').addClass('past');
+    } else if(time == 12) {
+        $('#input12area').addClass('present');
+    } else if (time < 12) {
+        $('#input12area').addClass('future');
+    }
+
+    if (time > 13) {
+        $('#input1area').addClass('past');
+    } else if(time == 13) {
+        $('#input1area').addClass('present');
+    } else if (time < 13) {
+        $('#input1area').addClass('future');
+    }
+    if (time > 14) {
+        $('#input2area').addClass('past');
+    } else if(time == 14) {
+        $('#input2area').addClass('present');
+    } else if (time < 14) {
+        $('#input2area').addClass('future');
+    }
+
+    if (time > 15) {
+        $('#input3area').addClass('past');
+    } else if(time == 15) {
+        $('#input3area').addClass('present');
+    } else if (time < 15) {
+        $('#input3area').addClass('future');
+    }
+
+    if (time > 16) {
+        $('#input4area').addClass('past');
+    } else if(time == 16) {
+        $('#input4area').addClass('present');
+    } else if (time < 16) {
+        $('#input4area').addClass('future');
+    }
+
+    if (time > 17) {
+        $('#input5area').addClass('past');
+    } else if(time == 17) {
+        $('#input5area').addClass('present');
+    } else if (time < 17) {
+        $('#input5area').addClass('future');
+    }
+
+}
+
+
 
 
 
