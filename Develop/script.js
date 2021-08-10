@@ -137,6 +137,8 @@ function tenAm () {
         localStorage.setItem("UserInput10", input10area.value);
         output10area.textContent = input10area.value
         
+         clear.style.display = "block";
+        clearstorage()
 
     }
 
@@ -158,6 +160,8 @@ function elevenAm () {
         localStorage.setItem("UserInput11", input11area.value);
         output11area.textContent = input11area.value
         
+         clear.style.display = "block";
+        clearstorage()
 
     }
 
@@ -179,7 +183,8 @@ function twelvePm () {
         localStorage.setItem("UserInput12", input12area.value);
         output12area.textContent = input12area.value
         
-
+         clear.style.display = "block";
+        clearstorage()
     }
 
 }
@@ -200,7 +205,8 @@ function thirteenPm () {
         localStorage.setItem("UserInput1", input1area.value);
         output1area.textContent = input1area.value
         
-
+         clear.style.display = "block";
+        clearstorage()
     }
 
 }
@@ -222,7 +228,8 @@ function fourteenPm () {
         localStorage.setItem("UserInput2", input2area.value);
         output2area.textContent = input2area.value
         
-
+         clear.style.display = "block";
+        clearstorage()
     }
 
 }
@@ -243,6 +250,8 @@ function fifteenPm () {
         localStorage.setItem("UserInput3", input3area.value);
         output3area.textContent = input3area.value
         
+         clear.style.display = "block";
+        clearstorage()
 
     }
 
@@ -264,6 +273,8 @@ function sixteenPm () {
         localStorage.setItem("UserInput4", input4area.value);
         output4area.textContent = input4area.value
         
+         clear.style.display = "block";
+        clearstorage()
 
     }
 
@@ -285,6 +296,8 @@ function seventeenPm () {
         localStorage.setItem("UserInput5", input5area.value);
         output5area.textContent = input5area.value
         
+         clear.style.display = "block";
+        clearstorage()
 
     }
 
@@ -298,7 +311,7 @@ function clearstorage(){
         clear.style.display = "none";
         location.reload();
 
-
+        
     })
    
 }
