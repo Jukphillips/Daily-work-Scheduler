@@ -39,3 +39,15 @@ THEN the saved events persist
 ```
 
 ## Screnshots
+
+### Date on header
+
+[Shows date on the header of the website in a specific format](./Screenshots/Date.PNG)
+
+### Working color coded timeblocks and Functional local storage
+
+[Shows picture of color coded timeblocks with a basis of the time of day and functional local storage](./Screenshots/WorkingBack&SaveInLocalStorage.PNG)
+
+### Functional Clear Button
+
+[Shows planner after clear button is selected](./Screenshots/ButtonClear.PNG)
